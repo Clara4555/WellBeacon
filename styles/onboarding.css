@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body{
+    background-color: #090030;
+    width: 100%;
+  
+
+}
+.logo{
+  justify-content: center;
+  display: flex;
+}
+.logo a{
+  color: #ffff;
+ align-items: center;
+ font-size: 30px;
+ font-weight: 800;
+ text-decoration: none;
+ border-bottom: 1px  solid white;
+
+
+}
+.landing-image{
+  padding: 60px;
+}
+
+input {
+  display: none;
+}
+
+.radio {
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	margin: 15px 15px 0 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Lato';
+	text-decoration: none;
+	font-size: 14px;
+	color: #FC3B70;
+	font-weight: 900;
+	cursor: pointer;
+  background-color: #FC3B70;
+	border: 2px solid #FC3B70;
+	border-radius: 50%;
+	display: inline-block;
+  transition: background-color .4s;
+}
+
+.radio:hover {
+  background-color: #727272;
+}
+
+input:checked ~ .radio {
+	color: #FFF;
+	/* background-color: #000; */
+  opacity: 1;
+}
+
+.img-box {
+  width: 400px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.img-box img{
+  width: 90%;
+  height: auto;
+
+}
+
+#one, #two, #three {
+  opacity: 0;
+  -webkit-transform: translate(0,30px);
+  transition-property: -webkit-transform, opacity;
+  transition-duration: .5s;
+  position: absolute;
+}
+
+#img-1:checked ~ .img-box #one,
+#img-2:checked ~ .img-box #two,
+#img-3:checked ~ .img-box #three {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+}
+
+#img-1:checked ~ .nav label #dot-1.radio,
+#img-2:checked ~ .nav label #dot-2.radio,
+#img-3:checked ~ .nav label #dot-3.radio {
+  /* color: #FFF; */
+  /* background-color: #000; */
+}
+
+.nav {
+  width: 120px;
+  margin: 0 auto;
+}
+.landing-image {
+  padding: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+p {
+  color: #fff;
+  font-size: 14px;
+}
+
+
+
+.text button {
+  background-color: #FC3B70;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  width: 304.36px;
+  height: 62.25px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 82px;
+  transition: background-color 0.4s;
+}
+
+button:hover {
+  background-color: #727272;
+}
+.text{
+  padding: 20px;
+}
