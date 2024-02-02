@@ -142,6 +142,13 @@ p {
   margin-top: 20px;
   border-radius: 82px;
   transition: background-color 0.4s;
+
+}
+.text button a
+
+{
+  text-decoration: none;
+  color: #fff ;
 }
 
 button:hover {
