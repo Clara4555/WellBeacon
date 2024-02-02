@@ -56,7 +56,7 @@ body{
     justify-content: space-between;
     border-radius: px;
     height: 70%;
-    background: url('/images/image.png') center/cover no-repeat;
+    background: url('/WellBeacon/images/image.png') center/cover no-repeat;
     overflow: hidden;
     padding: 50px;
     background-color: #090030;
