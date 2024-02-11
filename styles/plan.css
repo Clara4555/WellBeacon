@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
-
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 body {
   /* height: 300vh; */
   font-family: "Roboto";
@@ -13,6 +18,7 @@ body {
     overflow-x: hidden;
   &.hidden {
     overflow: hidden;
+
   }
   
 }
@@ -20,6 +26,7 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .test {
@@ -462,17 +469,13 @@ a .logo{
     p,a {
         font-size: 0.9em;
     }
-    body{
-      background-color: pink;
-    }
+   
 } 
  @media (max-width: 480px) {
     .box {
         width: calc(50% - 2%);
     } 
-    body{
-      background-color: red;
-    }
+   
  }
 
 
