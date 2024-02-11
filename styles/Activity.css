@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  /* height: 300vh; */
+  font-family: "Roboto";
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 1em; /* 1em is equivalent to the base font size */
+    overflow-x: hidden;
+  &.hidden {
+    overflow: hidden;
+  }
+  
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+footer {
+    background-color: #F3F3F3;
+    position: sticky;
+    bottom: 0;
+    /* left: 0; */
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    z-index: 9999; /* Ensure it appears on top of other content */
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+  }
+  
+  
+    
+     .right-caret {
+      margin-left: 1px; /* Adjust margin as needed */
+      vertical-align: middle;
+      color: white; /* Change caret color */
+      font-size: 20px; /* Change caret size */
+      font-weight: bold; /* Change caret thickness */
+    }
+    .user-cal {
+      background-color: #090030;
+      align-items: center;
+      background: url('/WellBeacon/images/image\ \(2\).png') center/cover no-repeat;
+      overflow: hidden;
+      background-color: #090030;
+      transition: all 2s;
+      padding: 20px;
+      border-radius: 10px;
+     
+    }
+  
+    /* Style for the .l divs */
+    .l {
+      display: flex;
+      justify-content: space-between;
+      color: #ffffff;
+      margin-top: 10px;
+    
+    }
+    .date{
+      text-align: center;
+      color: #ffffff;
+      margin-top: 30px;
+    }
+    .ll{
+      display: flex;
+      justify-content: space-between;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+    .wed{
+      border: 1px solid #FD4174;
+      background-color:#FD4174;
+      width: 50px;
+      height: 20px;
+  
+    }
+    .exercise-plan {
+        padding:15px;
+        background-color: #F3F3F3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Adjust alignment between boxes */
+      }
+      
+      .exercise-div {
+        background-color: #F3F3F3;
+        border: 2px solid #F3F3F3; /* Border properties */
+  
+        width: 100%; /* Set width to 100% initially */
+        max-width: calc(50% - 20px); /* Adjusted width for two boxes per row with margin */
+        padding: 20px; /* Adjust padding as needed */
+        border-radius: 20px;
+        height: fit-content;
+        box-sizing: border-box; /* Include padding and border in element's total width */
+        margin-bottom: 20px; /* Adjust margin for spacing between rows */
+      }
+      .completed {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Align items vertically */
+        margin-bottom: 10px; /* Adjust margin for spacing between content */
+        color: #ffffff; /* Default text color */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+      }
+      .text h1{
+        color: #090030;
+        padding: 20px;
+      }
+      .reps {
+        display: flex;
+        color: #ffff;
+        justify-content: end;
+  
+        /* justify-content: space-between; */
+      }
+      .div-1{
+        background-color: #FFA132;
+        border: 1px solid #FFA132;
+      }
+      
+        .div-2{
+        background-color: #FF666F;
+        border: 1px solid #FF666F;
+  
+      }
+      .div-3{
+        background-color: #5992FF;
+        border: 1px solid #5992FF;
+  
+      }
+      .div-4{
+        background-color: #4DFF94;
+        border: 1px solid #4DFF94;
+  
+      }
+      .div-5{
+        background-color: #7059FF;
+        border: 1px solid #7059FF;
+  
+      }
+      .div-6{
+        background-color: #FF666F;
+        border: 1px solid #FF666F;
+  
+      }
+       /* Media query for screens smaller than 768px */
+       @media screen and (max-width: 768px) {
+        .exercise-div {
+          max-width: 100%; /* Set max-width to 100% for full-width on smaller screens */
+        }
+      }
+
