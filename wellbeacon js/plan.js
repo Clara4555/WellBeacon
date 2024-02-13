@@ -115,8 +115,30 @@ completedCheckboxes.forEach((checkbox) => {
   });
 });
 
-const tap = document.querySelector('.profile');
-  tap.addEventListener('click', function(){
-       const toggleMenu = document.querySelector('.menu');
-  toggleMenu.classList.toggle('active');
+// const tap = document.querySelector('.profile');
+//   tap.addEventListener('click', function(){
+//        const toggleMenu = document.querySelector('.menu');
+//   toggleMenu.classList.toggle('active');
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Function to update step count
+  function updateStepCount(count) {
+      document.getElementById('stepCount').innerText = count + " steps";
+  }
+
+  // Function to simulate counting steps
+  function countSteps() {
+      let count = 0; // Initial step count
+      updateStepCount(count); // Update the display
+
+      // Simulate counting steps
+      setInterval(() => {
+          count++; // Increment step count
+          updateStepCount(count); // Update the display
+      }, 1000); // Adjust interval as needed
+  }
+
+  // Call the countSteps function when the page loads
+  countSteps();
 });
